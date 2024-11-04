@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="bg-blue-300">
+  <div class="bg-blue-300 p-2 rounded-md">
     <h1>{{ title }}</h1>
     <p>{{  imageUrl }}</p>
   </div>

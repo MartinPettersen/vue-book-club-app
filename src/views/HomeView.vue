@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import FrontDisplay from '../components/FrontDisplay.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="p-16 flex items-center justify-center">
+    <FrontDisplay title="Månedens bok: Fangen fra Sulten" imageUrl="bilde" />
   </main>
 </template>

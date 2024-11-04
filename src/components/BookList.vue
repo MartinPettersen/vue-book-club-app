@@ -37,14 +37,14 @@ const toggleShowMore = () => {
 
 <template>
   <div>
-    <div class="flex flex-col space-x-2">
+    <div class="flex flex-col space-x-2 items-center justify-center">
       <div>
 
         <h1>Månedens bok: {{ title }}</h1>
         <p>{{ imageUrl }}</p>
       </div>
-      <div>
-        <h1>Tidligere Bøker:</h1>
+      <div class="flex m-4 items-center justify-center flex-col">
+        <h1 class="m-4">Tidligere Bøker</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div v-for="book in books.slice(0, limit || books.length)" :key="book.title">
               <BookDisplay  :title="book.title" :image-url="book.imageUrl"/>
@@ -52,7 +52,7 @@ const toggleShowMore = () => {
             </div>
         </div>
       </div>
-      <button @click="toggleShowMore" class="p-4 bg-blue-400 rounded-lg">Mer</button>
+      <button @click="toggleShowMore" class="p-4 m-4 w-[60%] bg-blue-400 rounded-lg">Mer</button>
     </div>
   </div>
 </template>
