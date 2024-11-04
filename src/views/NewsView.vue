@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import AboutUs from '../components/AboutUs.vue'
+import LatestNews from '../components/LatestNews.vue'
 </script>
 
 <template>
   <main class="p-16 flex items-center justify-center">
-    <AboutUs />
+    <LatestNews />
   </main>
 </template>
 

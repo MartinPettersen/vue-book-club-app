@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import AboutUs from '../components/AboutUs.vue'
+import SignUp from '../components/SignUp.vue'
 </script>
 
 <template>
   <main class="p-16 flex items-center justify-center">
-    <AboutUs />
+    <SignUp />
   </main>
 </template>
 
